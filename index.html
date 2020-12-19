@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>cocomio</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet"type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+	<link rel="stlesheet" type="text/css" href="fuentes.css">
+    <link rel="icon" href="iconos/favicon-16x16.png">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+ $(document).ready(main);
+ 
+var contador = 1;
+function main () {
+	$('.menu_bar').click(function(){
+        
+		if (contador == 1) {
+			$('nav').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
+		}
+	});
+	// Mostramos y ocultamos submenus
+	$('.submenu').click(function(){
+		$(this).children('.children').slideToggle();
+	});
+}      
+   </script>
+</head>
+    <body>
+	<!-- menú-->
+        <header>
+		 <div class="menu_bar" id="fuente-perzonalizada">
+			 <a href="#" class="bt-menu"><span class="icon-Slip"></span>MENÚ</a>
+		  </div>
+		  <div class="logo">
+				<center><a href=#><img src="iconos/logo.png" align=top width=90 height=66></a></center>
+                       <nav>
+			 <ul>
+				    <li><a href="#">SUETERS</a></li>
+				    <li><a href="#">SUDADERAS</a></li>
+					<li><a href="#">ACCESORIOS</a></li>
+					<li><a href="#">CHAQUETAS</a></li>
+					<li><a href="#">PANTALONETAS</a></li>
+				    <li class="submenu">
+					   <a href="#">GORROS</a>
+					   <ul class="children">
+						  <li><a href="#">TODOS</a></li>
+						  <li><a href="#">PESCADOR</a></li>
+						  <li><a href="#">MONTAÑISTA</a></li>
+						  <li><a href="#">CACHUCHAS</a></li>
+					   </ul>
+				    </li>
+				    <li><a href="#">TOPS</a></li>
+				    <li><a href="#">BLUSAS</a></li>
+					<li><a href="#">TIENDAS</a></li>
+			 </ul>
+		  </nav><!--opciones de ropa-->
+                    <a href=#><img src="iconos/icono_bolsa_blanco.png" align=right width=50 height=50></a>
+				    <a href=#><img src="iconos/login_blanco.png" align=right width=50 height=60></a>
+                    <div class="buscar" align=center>
+                       <img src="iconos/icono_buscar_blanco.png" align=center width=50 height=50><input type="text" name="search" placeholder="BUSCAR" class="src" autocomplete="off">
+                    </div>	
+		  </div>
+        <br><br>
+	   </header>
+        <br><br><br><br><br><br><br>
+    <div class="opciones">
+          <center><img src="imagenes/6.png" width=1143 heigth=478></center>
+        <a href="#"><img src="iconos/icono_izquierdo_negro.png" width=60 height=110></a>
+        <img src="iconos/hombres_negro.png" width=150 height=100>
+        <a href="#"><img src="iconos/icono_derecha_negro.png" align=right width=60 height=110></a>
+        <img src="iconos/icono_mujeres_negro.png" align=right width=91 height=100>
+        </div>
+      
+	 <br><br><br><br><br><h3>DIRECCIONES</h3><br><br>
+	  <div class="dir">
+		 <br><p>Cl. 102 #14-136 #14-2 a, Centro, Turbo, Antioquia</p>
+		 <br><p>Cl. 69 #96f-29, lleras. Apartado, Antioquia</p>
+		 <br><p>Cl. 154a #45b-29, Perpetio socorro. Medellin, Antioquia</p>
+		 <br><p>Cl. 7a #25-12, La candelaria, Bogota D.C</p>
+	</div>
+	<br><br><br><!--API de google maps-->
+	 <h3 class="maps">MAPAS</h3><br><br>
+	 <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.061194908892!2d-76.72819001179799!3d8.09524228347989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5065fc01c2542d%3A0xcd7661eca3a8ded4!2sCl.%20104%20%2314-35%2C%20Turbo%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1603374545050!5m2!1ses-419!2sco" width="1350" height="460" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br><br><br>
+			
+			<h3>LÍNEAS DE ATENCIÓN AL CLIENTE</h3><br><br>
+			<div class="info1">
+				<br><h4>TURBOTEX S.A.S</h4>
+					<br><p align=justify>Turbo, Antioquia - 570 88 88 </p>  
+					<br><p align=justify>Medellin, Antioquia - 550 70 70 </p> 
+					<br><p align=justify>Bogota D.C, - 448 33 55 </p> 	
+			</div>
+			<div class="info2">
+				<br><h4>COCOMIO</h4>	
+					<br><p align=justify>Turbo, Antioquia - 570 88 88</p>
+					<br><p align=justify>Medellin, Antioquia - 550 70 70</p>
+					<br><p align=justify>Medellin, Antioquia - 550 70 70</p>
+			</div>
+		<div class="fn_logo">
+		<img src="iconos/icono_color.png" width="200" heigth="200">
+	</div>
+    <br><br><br>
+	<div class="fn_menu">
+		<a href="#"><p>CAMBIOS Y DEVOLUCIONES</p></a>
+		<a href="#"><p>FORMAS DE PAGO</p></a>
+		<a href="#"><p>POLÍTICA DE DATOS</p></a>
+		<a href="#"><p>CONTACTO</p></a>
+	</div>	
+        <br><br><br>
+		<footer class="f_pag">
+			<br><p align=center>Cocomioatencion@turbotext.com.co</p><br>
+            <center>
+			<img src="iconos/instagram.png" width="120"height="30"><br><br><img src="iconos/facebook.png" width="120"height="30">
+            <br><br>
+			<p>cocomio es una marca registrada su propiedad intelectual asi como sus derechos de fabricacion comercializacion
+			le pertenecen a TURBOTEX SOCIEDAD ANONIMA, TURBOTEX S.A.S.</p><br>
+			<p>© Copyright 2020 COCOMIO, TODOS LOS DERECHOS RERVADOS.</p>
+             <br><br>
+			</center>
+		</footer>
+    </body>
+</html>
