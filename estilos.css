@@ -1,0 +1,266 @@
+/*Código del menú desplegable*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+body { 
+	background:#FEFEFE;
+	font-family:Oswald;
+	font-size:16px;
+	/*font-color*/ 
+}
+
+.box{
+    position:absolute;
+    outline:none;
+}
+input.src{  
+    padding:0px;
+    width:25%;
+    height:10%;
+    color:#ffffff;
+    background:#000000;
+    border-radius:3px;
+    border-top:none;
+    border-right:none;
+    border-bottom:#ffffff 3px solid;
+    font-family:Oswald;
+}
+
+
+h3{
+	float:left;
+	font-size:20px;
+	
+} 
+.logo{
+    position:fixed;
+    width:100%;
+    display:block;
+    color:#ffffff;
+	background:#000000;
+	padding:0px;
+	height:230px;
+    margin:0 auto;
+} 
+.menu_bar {
+	display:none;
+}
+ 
+header {
+	width: 100%;
+}
+ 
+header nav {
+	background:#000000;
+	z-index:1000;
+	max-width: 1000px;
+	width:95%;
+	margin:20px auto;
+}
+ 
+header nav ul {
+	list-style:none;
+}
+ 
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+ 
+header nav ul li:hover {
+	background:#6E6E6E;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+ 
+header nav ul li a span {
+	margin-right:10px;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+ 
+header nav ul li .children {
+	display: none;
+	background:#000000;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+ 
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom:  rgba(255,255,255,.5);
+}
+ 
+header nav ul li .children li a {
+	display: block;
+}
+ 
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+ 
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+ 
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+ 
+	.menu_bar {
+		display:flex;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#000000;
+	}
+ 
+	.menu_bar .bt-menu {
+		display:flex;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 28px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+ 
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		border-bottom:1px rgba(255,255,255,.5);
+	}
+ 
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+	header nav ul li .caret {
+		float: right;
+	}
+}
+/*ropa por género*/
+
+
+.opciones{ 
+	background:#FFFFFF;
+	padding:20px;
+	max-width:100%;
+    max-height:100%;
+	padding-top:auto;
+}
+.info1{ /*cotactos*/
+	display:block;
+	float:left;
+	padding-left:5.714rem;
+	padding-right:5.714rem;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:19px;
+	overflow:hidden;
+	box-shadow: 0px 0px 0px 3px rgba(255, 255, 255);
+}
+.info2{ 
+	display:block;
+	padding-left:5.714rem;
+	padding-right:5.714rem;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:19px;
+	overflow:hidden;
+	box-shadow: 0px 0px 0px 3px rgba(255, 255, 255);
+}
+.f_pag{ /*footer de la página*/
+	float:center;
+	background:#ffffff;
+	padding:0px;
+	display:block;
+	/*color:#ffffff;*/
+}	
+.dir{
+	padding-left:5.714rem;
+	padding-right:5.714rem;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:19px;
+	overflow:hidden;
+}
+.maps{
+	padding-left:5.714rem;
+	padding-right:5.714rem;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+h3{
+	padding-left:5.714rem;
+}
+.fn_menu{
+	font-weight:bold;
+	display:block;
+	padding-left:5.714rem;
+	padding-right:5.714rem;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:19px;
+	overflow:hidden;
+	box-shadow: 0px 0px 0px 3px rgba(255, 255, 255);
+}
+.fn_logo{
+	float:right;
+	padding-left:5.714rem;
+	padding-right:5.714rem;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:19px;
+	overflow:hidden;
+	box-shadow: 0px 0px 0px 3px rgba(255, 255, 255);
+	
+}
